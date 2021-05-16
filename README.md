@@ -4,6 +4,9 @@
 CI for deployment.yaml
 ![](images/updatedeployment.png)
 
+Service Accounts
+![](images/serviceaccounts.png)
+
 Keys
 ![](images/sakey.png)
 
