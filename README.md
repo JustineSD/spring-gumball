@@ -2,7 +2,7 @@
 
 
 CI for deployment.yaml
-![](images/updatedemployment.png)
+![](images/updatedeployment.png)
 
 Keys
 ![](images/sakey.png)
