@@ -35,7 +35,7 @@ Ingress Creation
 ![](images/ingresscreation.png)
 
 Ingress
-![](images/ingress.jpeg)
+![](images/ingress.png)
 
 Gumball Deployment
 ![](images/gumball.jpeg)
