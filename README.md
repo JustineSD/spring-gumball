@@ -42,7 +42,7 @@ docker push juss2000/spring-gumball:latest
 
 ![](images/imagepush1.jpeg)
 ![](images/imagepush2.jpeg)
-![](images/containers.png)
+![](images/containers.jpeg)
 ![](images/dockerhub.png)
 
 
