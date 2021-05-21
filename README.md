@@ -144,7 +144,7 @@ apt-get install mysql-client
 mysql -u root -p -h 172.22.16.7 <--- Replace this with that same private IP from earlier!
  ```
 ![](images/deployment-process/jumpbox.png)
-![](images/deployment-process/jumpboxtomysql.jpeg)
+![](images/deployment-process/jumpboxintomysql.jpeg)
 
 6. Wait for your ingress to finish and then click on the endpoint to go to the application.
 ![](images/deployment-process/cluster.png)
@@ -153,6 +153,6 @@ mysql -u root -p -h 172.22.16.7 <--- Replace this with that same private IP from
 ![](images/deployment-process/pod.png)
 ![](images/deployment-process/service.png)
 ![](images/deployment-process/service2.png)
-![](images/deployment-process/ingress.png)
+![](images/deployment-process/ingress1.png)
 ![](images/deployment-process/ingress2.png)
 
