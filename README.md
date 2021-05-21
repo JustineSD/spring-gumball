@@ -149,10 +149,17 @@ mysql -u root -p -h 172.22.16.7 <--- Replace this with that same private IP from
 6. Wait for your ingress to finish and then click on the endpoint to go to the application.
 ![](images/deployment-process/cluster.png)
 ![](images/deployment-process/workloads.png)
-![](images/deployment-process/depolyment.png)
+![](images/deployment-process/deployment.png)
 ![](images/deployment-process/pod.png)
 ![](images/deployment-process/service.png)
 ![](images/deployment-process/service2.png)
 ![](images/deployment-process/ingress1.png)
 ![](images/deployment-process/ingress2.png)
 
+# Gumball Cloud Deployment
+1. Gumball on the cloud.
+![](images/local:cloud-gumballapp/cloudgumball.jpeg)
+2. Database before turning crank
+![](images/local:cloud-gumballapp/clouddatabasebefore.png)
+3. Database after turning crank
+![](images/local:cloud-gumballapp/clouddatabaseafter.png)
