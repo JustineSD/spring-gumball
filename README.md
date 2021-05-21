@@ -127,4 +127,32 @@ kubectl create -f service.yaml
 
 kubectl apply -f ingress.yaml
 ```
-5. Wait for your ingress to finish and then click on the endpoint to go to the application.
+5. Set up your jump box using these commands
+ ```
+kubectl create -f jumpbox.yaml
+kubectl exec -it jumpbox -- /bin/bash
+
+apt-get update
+apt-get install curl
+apt-get install iputils-ping
+apt-get install telnet
+apt-get install httpie
+
+apt-get update
+apt-get install mysql-client 
+
+mysql -u root -p -h 172.22.16.7 <--- Replace this with that same private IP from earlier!
+ ```
+![](images/deployment-process/jumpbox.png)
+![](images/deployment-process/jumpboxtomysql.jpeg)
+
+6. Wait for your ingress to finish and then click on the endpoint to go to the application.
+![](images/deployment-process/cluster.png)
+![](images/deployment-process/workloads.png)
+![](images/deployment-process/depolyment.png)
+![](images/deployment-process/pod.png)
+![](images/deployment-process/service.png)
+![](images/deployment-process/service2.png)
+![](images/deployment-process/ingress.png)
+![](images/deployment-process/ingress2.png)
+
