@@ -76,10 +76,55 @@ docker push juss2000/spring-gumball:latest
 ![](images/deployment-process/createcloud3.jpeg)
 
 2. Cloud instance
-![](images/deployment-process/cloudsql.jpeg)
+![](images/deployment-process/cloudsql.png)
 
 3. Database in instance
 ![](images/deployment-process/databases.png)
 
+-Remember the private IP that is listed on the instance page.
 
+# Modifying deployment.yaml
 
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-gumball-deployment
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      name: spring-gumball
+  replicas: 4 # tells deployment to run 2 pods matching the template
+  template: # create pods using pod definition in this template
+    metadata:
+      # unlike pod.yaml, the name is not included in the meta data as a unique name is
+      # generated from the deployment name
+      labels:
+        name: spring-gumball
+    spec:
+      containers:
+      - name: spring-gumball
+        image: paulnguyen/spring-gumball:v3.0
+        env:
+        - name: MYSQL_HOST
+          value: 172.22.16.7  <---- Replace this IP with the one listed on your instance page! 
+        ports:
+        - containerPort: 8080
+```
+
+# Deployment of Spring-Gumball to GKE
+1. Create a cluster with name "cmpe172" and zone "us-central1-c"
+2. Connect to the cluster on the Google command line
+3. Upload your deployment.yaml, pod.yaml, service.yaml, and ingress.yaml
+4. Run the necessary commands for your yaml files
+```
+kubectl apply -f pod.yaml
+
+kubectl create -f deployment.yaml --save-config
+
+kubectl create -f service.yaml
+
+kubectl apply -f ingress.yaml
+```
+5. Wait for your ingress to finish and then click on the endpoint to go to the application.
