@@ -51,7 +51,7 @@ docker push juss2000/spring-gumball:latest
 1. Gumball on localhost through Docker
 ![](images/local:cloud-gumballapp/gumballdocker.png)
 2. Database before turning crank
-![](images/local:cloud-gumballapp/localdatabasebefore.jpeg)
+![](images/local:cloud-gumballapp/localdatabefore.jpeg)
 3. Database after turning crank
 ![](images/local:cloud-gumballapp/localdatabaseafter.jpeg)
 
@@ -71,4 +71,15 @@ docker push juss2000/spring-gumball:latest
 		- Use Automatic IP Range
 		
 1. Configuring the SQL instance
-![](images/deployment-process/cloudsql.png)
+![](images/deployment-process/createcloud1.jpeg)
+![](images/deployment-process/createcloud2.jpeg)
+![](images/deployment-process/createcloud3.jpeg)
+
+2. Cloud instance
+![](images/deployment-process/cloudsql.jpeg)
+
+3. Database in instance
+![](images/deployment-process/databases.png)
+
+
+
