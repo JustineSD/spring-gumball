@@ -1,4 +1,3 @@
-
 package com.example.gumballmachine ;
 
 public class SoldState implements State {
@@ -35,5 +34,3 @@ public class SoldState implements State {
 		return "dispensing a gumball";
 	}
 }
-
-
